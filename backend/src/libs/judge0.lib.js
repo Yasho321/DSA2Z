@@ -17,7 +17,7 @@ export const submitBatch = async (submissions) => {
       submissions,
     },
     {
-      headers: { Authorization: `Bearer ${process.env.JUDGE0_API_KEY}` },
+      headers: { Authorization: `Bearer ${process.env.JUDGE0_API_KEY}` , "X-Auth-Token": process.env.JUDGE0_API_KEY, },
     },
   );
 
