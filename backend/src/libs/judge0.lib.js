@@ -37,7 +37,7 @@ export const pollBatchResult = async (tokens) =>{
               base64_encoded: false,
             },
             headers: {
-              Authorization: `Bearer ${process.env.JUDGE0_API_KEY}`,
+              "X-Auth-Token": process.env.JUDGE0_API_KEY,
             },
           }
         );
