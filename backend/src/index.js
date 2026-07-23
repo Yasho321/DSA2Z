@@ -34,7 +34,7 @@ app.set("trust proxy", 1);
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin : ["https://dsa2z.in",'https://dsa-2-z.vercel.app/' ,"https://www.dsa2z.in","https://dsa2z.in/","https://www.dsa2z.in/"],
+    origin : ["https://dsa2z.in","https://dsa-2-z.vercel.app/" ,"https://dsa-2-z.vercel.app","https://www.dsa2z.in","https://dsa2z.in/","https://www.dsa2z.in/"],
     credentials : true
 }));
 
