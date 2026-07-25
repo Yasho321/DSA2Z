@@ -17,7 +17,10 @@ export const submitBatch = async (submissions) => {
       submissions,
     },
     {
-      headers: { Authorization: `Bearer ${process.env.JUDGE0_API_KEY}` , "X-Auth-Token": process.env.JUDGE0_API_KEY, },
+      headers: {
+    "X-RapidAPI-Key": process.env.JUDGE0_API_KEY,
+    "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com",
+},
     },
   );
 
@@ -38,9 +41,9 @@ export const pollBatchResult = async (tokens) => {
           base64_encoded: false,
         },
         headers: {
-          Authorization: `Bearer ${process.env.JUDGE0_API_KEY}`,
-          "X-Auth-Token": process.env.JUDGE0_API_KEY,
-        },
+    "X-RapidAPI-Key": process.env.JUDGE0_API_KEY,
+    "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com",
+},
       },
     );
 
